@@ -20,6 +20,8 @@
 		FAAE2FB9240353F2003877FE /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE2FB8240353F2003877FE /* FeedViewController.swift */; };
 		FAAE2FBC240355B7003877FE /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAE2FBB240355B7003877FE /* PostCell.swift */; };
 		FAAE2FBF24035BEF003877FE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = FAAE2FBE24035BEF003877FE /* SDWebImage */; };
+		FADC13BF2404959F003C4AAE /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC13BE2404959F003C4AAE /* CommentCell.swift */; };
+		FAE693A5240DEF7E00927CD5 /* AddCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE693A4240DEF7E00927CD5 /* AddCommentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		FAAE2FB624035124003877FE /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		FAAE2FB8240353F2003877FE /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		FAAE2FBB240355B7003877FE /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		FADC13BE2404959F003C4AAE /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		FAE693A4240DEF7E00927CD5 /* AddCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				FAAE2FBB240355B7003877FE /* PostCell.swift */,
+				FADC13BE2404959F003C4AAE /* CommentCell.swift */,
+				FAE693A4240DEF7E00927CD5 /* AddCommentCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -306,6 +312,8 @@
 				FA4E090923FB5739001AAFBF /* AppDelegate.swift in Sources */,
 				FAAE2FB9240353F2003877FE /* FeedViewController.swift in Sources */,
 				FAAE2FB124034613003877FE /* CameraViewController.swift in Sources */,
+				FAE693A5240DEF7E00927CD5 /* AddCommentCell.swift in Sources */,
+				FADC13BF2404959F003C4AAE /* CommentCell.swift in Sources */,
 				FAAE2FBC240355B7003877FE /* PostCell.swift in Sources */,
 				FAAE2FB524035049003877FE /* TextField.swift in Sources */,
 				FA4E090B23FB5739001AAFBF /* SceneDelegate.swift in Sources */,

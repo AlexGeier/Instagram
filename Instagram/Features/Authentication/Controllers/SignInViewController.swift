@@ -77,6 +77,9 @@ class SignInViewController: UIViewController {
         guard let password = passwordField.text else { return }
         
         PFUser.logInWithUsername(inBackground: username, password: password) { (user, error) in
+            self.usernameField.text = ""
+            self.passwordField.text = ""
+            
             if let user = user {
                 let viewController = UINavigationController(rootViewController: FeedViewController())
                 viewController.modalPresentationStyle = .fullScreen
@@ -94,6 +97,9 @@ class SignInViewController: UIViewController {
         user.password = passwordField.text
         
         user.signUpInBackground { (success, error) in
+            self.usernameField.text = ""
+            self.passwordField.text = ""
+            
             if (success) {
                 let viewController = UINavigationController(rootViewController: FeedViewController())
                 viewController.modalPresentationStyle = .fullScreen

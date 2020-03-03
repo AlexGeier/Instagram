@@ -45,7 +45,7 @@ class PostCell: UITableViewCell {
     
     private let captionLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 14)
+        label.font = .systemFont(ofSize: 16)
         
         return label
     }()
@@ -55,7 +55,7 @@ class PostCell: UITableViewCell {
         
         setupLayout()
     }
-        
+    
     private func setupLayout() {
         let textStackView = UIStackView(arrangedSubviews: [
             authorLabel,
@@ -67,7 +67,7 @@ class PostCell: UITableViewCell {
         
         let stackView = UIStackView(arrangedSubviews: [
             postImageView,
-            textStackView
+            textStackView,
         ])
         stackView.axis = .vertical
         stackView.spacing = 8

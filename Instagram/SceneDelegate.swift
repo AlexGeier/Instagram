@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -22,8 +23,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
          
-        window?.rootViewController = SignInViewController()
+        let rootViewController = SignInViewController()
+        window?.rootViewController = rootViewController
+
         window?.makeKeyAndVisible()
+        
+        if (PFUser.current() != nil) {
+            let viewController = UINavigationController(rootViewController: FeedViewController())
+            viewController.modalPresentationStyle = .fullScreen
+            rootViewController.present(viewController, animated: true, completion: nil)
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
